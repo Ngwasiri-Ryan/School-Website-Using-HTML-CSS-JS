@@ -1,0 +1,1522 @@
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+:root{
+   --color-black: rgba(0,0,0,1);
+}
+.text{
+    color: var(--color-black);
+}
+body{
+    max-width: 100vw;
+   overflow-x: hidden;
+}
+section{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: .2rem solid blueviolet ;
+}
+/******************header styling******************/
+header{ 
+    width: 100%;
+    height: 14.5%;
+    display:flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: .5rem;
+    gap: 30%;
+    background-color: blueviolet;
+    z-index: 10;
+    position: fixed;
+}
+.link{
+    height: 1.3rem;
+    width: 1.3rem;
+}
+header .logo img{
+    height: 3rem;
+    width: 3rem;
+}
+header .logo{
+    display: flex;
+}
+header.right{
+    margin-right: 5%;
+}
+header .right img{
+    height: 1rem;
+    width: 1rem;
+    margin-top:.5rem;
+    margin-left: .8rem;
+}
+header .right .search-bar{
+   display: flex;
+   gap: 1rem;
+   background-color: white;
+   height: 2rem;
+   border-radius: 4rem;
+   border: 1px solid black;
+   width: 80%;
+   margin-left: 2rem;
+}
+header .right .search-bar input{
+    background-color: transparent;
+    outline: none;
+    border:none;
+    color:var(--color-black);
+    width: 75%;
+}
+header .logo span{
+    margin-top: .5rem;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    font-weight:700;
+    color: white;
+    font-family:sans-serif;
+    cursor: pointer;
+}
+header .right ul{
+    display: flex;
+    margin-top: 1rem;
+    gap: 1.3rem;
+    margin-right: 5%;
+}
+header .right ul li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    font-family: sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+header .right ul li a:hover{
+    color: purple;
+    transition: .5s delay;
+}
+/****************end of header styling******************/
+
+/****************home page styling*********************/
+#home{
+    display: flex;
+    flex-direction: column;
+   gap: 7%;
+   height: 40rem;
+}
+#home .home-content{
+    width: 100%;
+    margin-bottom: -90%;
+    height: 100%;
+    gap: 0;
+    display: flex;
+    background-image: url("images/bg11.jpg ");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+#home .home-content .container{
+    margin-top: 10%;
+    width: 60%;
+    height: 100vh; 
+   
+}
+#home .home-content .container .activities{
+    margin-left: -7%;
+    margin-top: 28%;
+}
+#home .home-content .container .activities .activity{
+    margin:3px;
+    background-color: rgba(255, 255, 255, 0.918);
+    padding:10px 25px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: sans-serif;
+    cursor: pointer;
+    padding-left: 4rem;
+    padding-right: 3rem;
+}
+#home .home-content .container .activities .activity:hover{
+    opacity: 0.7;
+}
+#home .home-content .container .activities .activity:nth-child(1){
+    width: 10%;
+    color: blue;
+    text-decoration: none;
+}
+#home .home-content .container .activities .activity:nth-child(2){
+    width:38%;
+    color: orange;
+}
+#home .home-content .container .activities .activity:nth-child(3){
+    width: 30%;
+    color: red;
+}
+#home .home-content .container .activities .activity:nth-child(4){
+    width: 25%;
+    color: yellow;
+}
+#home .home-content .container .activities .activity:nth-child(5){
+    width: 13rem;
+    color: green;
+}
+#home .home-content .wrapper{
+    height: 100vh;
+    max-width: 45%;
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: end;
+}
+#home .home-content .wrapper p{
+    max-width: 100%;
+    color: white;
+    font-size: 1.2rem;
+    padding-right: 2%;
+}
+#home .home-content .wrapper button{
+    max-width: 100%;
+    color: white;
+    font-size: 1.3rem;
+    background-color: blueviolet;
+    padding: 15px 30px;
+    border-radius: 2rem;
+}
+#home .home-content .wrapper button:hover{
+    opacity: 0.7;
+}
+#home .home-content .wrapper .links{
+    display: flex;
+    gap: 3rem;
+    cursor: pointer;
+}
+
+/*============about-us page styling============*/
+#about{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#about .first{
+    height: 80%;
+    width: 100%;
+    background-image: url("images/about-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    padding-bottom: 2rem;
+}
+#about .first .first-content{
+    margin-left:-12%;
+    max-width: 65%;
+    margin-bottom: 5%;
+    margin-top: -2rem;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: left;
+}
+#about .first .first-content h1{
+    margin-top: 4rem;
+    color: blueviolet;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+#about .first .first-content h1 span{
+    color: gray;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 13px;
+}
+#about .first .first-content p{
+    max-width: 50%; 
+}
+.about-us{
+    height: 10rem;
+    width: 30rem;
+    margin-bottom: 0rem;
+    margin-left: 14rem;
+    display: flex;
+    flex-direction: column;
+    gap:.5rem;
+}
+.info-icon{
+    height: 1.3rem;
+    width: 1.3rem;
+}
+.about-us .info-holder{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: .8rem;
+}
+
+.about-us .info-holder span{
+    margin-top: 5px;
+    font-weight: 500;
+    margin-left: 15px;
+    font-weight: 500;
+    font-size: 17px;
+}
+.building{
+    height: 2.5rem;
+    width: 2.5rem;
+    cursor: pointer;
+}
+#about .second{
+    width: 100%;
+    height: 20rem;
+    background-color:blueviolet;
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+}
+#about .second .program-holder{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5rem;
+}
+#about .second h2{
+    color: white;
+    padding-top: 3%;
+    text-align: center;
+}
+#about .second .programs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;  
+}
+#about .second .programs .program-heading{
+    color: white;
+    text-transform: uppercase;
+    padding-bottom: .5rem;
+}
+#about .third{
+    width: 100%;
+    height: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+#about .third .partners{
+    text-align: center;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    padding-top: 3px;
+    gap: 1rem;
+}
+#about .third .logos{
+    display: flex;
+    gap:10%;
+    align-items: center;
+    justify-content: center;
+    margin-top: .7rem;
+}
+#about .third .logos img{
+    height: 2.5rem;
+    height: 2.5rem;
+}
+/*==================end of about page styling================*/
+
+/*---------------EXPERIENCE PAGE STYLING--------*/
+#experience{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#experience h3{
+    align-items: center;
+    justify-content: center;
+    color: blueviolet;
+    font-weight: 700;
+    display: flex;
+    text-transform: uppercase;
+    padding: .7rem 0;
+    font-size: 20px;
+}
+#experience .holder{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    padding-top: 2%;
+    gap: 2%;
+    padding-bottom: 2%;
+}
+#experience .holder .left{
+    width: 40%;
+    height: 90%;
+}
+#experience .holder .left img{
+    width: 100%;
+    height: 100%;
+}
+#experience .holder .right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    padding-top: 10%;
+}
+#experience .holder .right .experience-heading{
+    color: gray;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 13px;
+    text-align: left;
+    display: flex;
+}
+#experience .holder .right p{
+    max-width: 80%;
+    text-align: left;
+    justify-content: center;
+}
+#experience .main{
+    width: 100%;
+    height:30rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: -2%;
+}
+#experience .main h4{
+    color: blueviolet;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    padding: .7rem 0;
+    font-size: 17px;
+    text-align: center;
+    align-items: center;
+}
+#experience .main .cards{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding-top: 2%;
+    
+}
+#experience .main .acheivement-card{
+    height: 24rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    justify-content: center;
+    padding: .6rem .6rem .6rem;
+    background-color: white;
+    box-shadow: 2px 4px 8px 2px rgba(0,0,0,0.2);
+}
+#experience .main .acheivement-card .image{
+    width: 100%;
+    height: 60%;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+#experience .main .acheivement-card .text{
+    padding-bottom: 1%;
+    overflow: hidden;
+}
+#experience .main .acheivement-card .text .holds{
+    display: flex;
+    gap: 38%;
+    cursor: pointer;
+}
+#experience .main .acheivement-card .text .holds h5{
+    font-size: 15px ;
+    font-weight: 900;
+    font-family: sans-serif;
+    color: blueviolet;
+}
+#experience .button{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    overflow: hidden;
+    width: 100%;
+    height: 1rem;
+    align-items: center;
+    justify-content:center;
+    display: flex;
+}
+#experience .button button{
+    color: white;
+    font-size: 1rem;
+    background-color: blueviolet;
+    padding: 7px 15px;
+    border-radius: 2rem;
+}
+#experience .last{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    margin-top: 2rem;
+    gap: 1rem;
+    flex-direction: column;
+   background-color: blueviolet;
+}
+#experience .last p{
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+#experience .last .future-partners{
+    display: flex;
+    gap: 5rem;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: -1rem;
+    align-items: center;
+    justify-content: center;
+}
+#experience .last .future-partners img{
+   height: 1.8rem;
+}
+/*==========end of eexperience page styling==============*/
+
+/*---------------ACADEMICS HOLDER--------------*/
+#academics{
+    height: 55rem;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+    border-bottom: none;
+}
+#academics .academic-holder{
+    width: 100%;
+    height: 90%;
+    margin-top:2px;
+    background-image: url("images/gathering.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+#academics .heading{
+    background-color: transparent;
+    margin-top:.3rem;
+}
+#academics .heading h6{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+#academics h6 span:nth-child(1){
+   color: blue;
+}
+#academics h6 span:nth-child(2){
+   color: orange;
+}
+#academics h6 span:nth-child(3){
+   color: yellow;
+}
+#academics h6 span:nth-child(4){
+   color: red;
+}
+#academics h6 span:nth-child(5){
+   color: violet;
+}
+#academics .main{
+    margin-top: 30%;
+    display: flex;
+    flex-direction: row;
+    gap:1%;
+    margin-top: .5rem;
+}
+#academics .main .left-side{
+     height: 50rem;
+     width:50%;
+     display: flex;
+     margin-top: 7%;
+     flex-direction: column;
+     gap: 2rem;
+    padding-top: 5rem;
+}
+#academics .main .left-side span{
+    color: blueviolet;
+    padding-left: 5%;
+    margin-bottom: 1rem;
+    font-size: 25px;
+}
+#academics .main .left-side p{
+   max-width: 90%;
+   padding-left: 5%;
+   padding-right: 5%;
+   color: white;
+   font-size: 1.3rem;
+   text-shadow: 1px 2px 4px #000;
+   margin-top: -2rem;
+}
+#academics .main .left-side button{
+    width: 15rem;
+    height: 3.23rem;
+    color: white;
+    font-size: 1.3rem;
+    background-color: blueviolet;
+    padding: 12px 27px;
+    border-radius: 2rem;
+    margin-left: 30%;
+    text-transform: uppercase;
+}
+#academics .main .left-side .links{ 
+    gap: 3rem;
+    align-items: center;
+    margin-left: 30%;
+    justify-content: center;
+    display: flex;
+}
+#academics .main .left-side .links .link{
+   object-fit: cover;
+}
+#academics .main .right-side{
+    margin-top: 6%;
+    height: 50rem;
+    width:50%;   
+    justify-content: center;
+    align-items: center;
+}
+/***********quick question box styling****************/
+  .accordion{
+    width: 65%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 30px;
+    margin-top: 2.5rem;
+    margin-left: 15%;
+}
+.accordion .accordion-title{
+    margin-bottom:30px;
+    text-align: center;
+}
+.accordion .content-container .question{
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 15px;
+    border-bottom: 1px solid #000;
+    position: relative;
+    cursor: pointer;
+ }
+.accordion .content-container .question::after{
+    content: "+";
+    display: block;
+    position: absolute;
+    right: -5px;
+    cursor: pointer;
+    margin-top: -20px;
+ }
+ .accordion .content-container .answer{
+    padding-top: 15px;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%; 
+    height: 0px;
+    overflow: hidden;
+    transition: .5s;
+ }
+
+ /* javascript styling link*/
+
+ .accordion .content-container.active .answer{
+   height: 80px;
+ }
+ .accordion .content-container.active .question{
+    font-size: 18px;
+    transition: .5s;
+ }
+ .accordion .content-container.active .question::after{
+    content: "-";
+    font-size:18px;
+    transition: .5s;
+ }
+ /**********end ofquick quesion box styling***************/
+ #academics .second{
+    margin-top: 1rem;
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+ }
+ #academics .second .img-holder{
+   padding-left: 12px;
+   padding-right: 12px;
+   padding-top: 6px;
+   padding-bottom: 6px;
+   border-radius: 5px;
+   box-shadow:  2px 4px 8px 2px rgba(0,0,0,0.2);
+ }
+ #academics .second .img-holder img{
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+    box-shadow:  2px 4px 8px 2px rgba(0,0,0,0.2);
+    padding: 5px 10px;
+ }
+ #academics .second .img-holder:hover{
+    transition: .7s ease-in-out;
+    transform: scale(1.5);
+ }
+ /******************CAMPUS*************************/
+#campus{
+   width: 100%;
+   height: 30rem;
+   background-image: url("images/university-quadrangle.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   overflow: hidden;
+}   
+#campus .holder{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40%;
+    margin-left: 30%;
+    justify-content: center;
+}
+#campus p{
+    color: white;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-left: 6%;
+}
+#campus button{
+    padding: 7px 13px;
+    background-color: blueviolet;
+    color: white;
+    font-weight: 500;
+    font-size: 10px;
+    text-transform: uppercase;
+    width: 8rem;
+    margin-left: 40%;
+}
+
+/******************END OF CAMPUS************************/
+
+/*-----------------CLASSROOM----------------*/
+#classroom{
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    height: 27rem;
+    margin-bottom: 1%;
+    padding: 2%;
+    gap: 1rem; 
+    border-bottom: none;
+    overflow: hidden;
+}
+#classroom .heading{
+    display: flex;
+    color: blueviolet;
+    font-family: sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-decoration: underline;
+}
+#classroom .blocks{
+    display: flex;
+    gap: 5%;
+}
+#classroom  .blocks .block-1,.block-2{
+    height: 90% ;
+    width: 45%;
+}
+#classroom  .blocks .block-2{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+#classroom  .blocks .block-2 .holder{
+  text-align: left;
+  display: flex;
+  margin-bottom: 1rem;
+}
+#classroom  .blocks .block-2 span{
+    color: gray;
+    text-align: left;
+    margin-left: -90%;
+}
+#classroom  .blocks .block-2 p{
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+#classroom  .blocks .block-2 button{
+    background-color: blueviolet;
+    padding: 1rem 1rem;
+    margin-top: 2rem;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+}
+/*---------------END OF CLASSROOM----------------*/
+
+/**********************ACADEMIC STRUCTURE**************************/
+#structure{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    margin-bottom:none;
+    padding: 2%;
+    gap: 1rem; 
+    border-bottom: none;
+    background-color: aliceblue;
+}
+#structure .heading{
+    display: flex;
+    color: blueviolet;
+    font-family: sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    text-decoration: underline;
+    padding-top: 2%;
+}
+#structure .card-holder{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#structure .card-holder .card{
+    height: 20rem;
+    width: 20rem;
+   box-shadow:  2px 4px 8px 2px rgba(0,0,0,0.2);
+    padding: .5rem;
+    border-radius: 1rem;
+    background-color: white;
+}
+#structure .card-holder .card img{
+    width: 100%;
+    height: 80%;
+}
+#structure .card-holder .card .content{
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+#structure button{
+    background-color: blueviolet;
+    padding: 1rem 1rem;
+    margin-top: 2rem;
+    color: white;
+    text-transform: uppercase;
+    justify-content: center;
+    align-self:center ;
+    font-size: 1rem;
+    font-weight: 700;
+    width: 15rem;
+}
+/********************END OF ACADEMIC STRUCTURE*********************/
+
+/************************CERTIFICATES***************************/
+#certificates{
+    height: 50rem;
+    width: 100%;
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0%;
+}
+#certificates .first .content .heading{
+    text-align: center;
+    color: blueviolet;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+#certificates .first{
+    height:60%;
+    width: 100%;
+   background-image: url("images/graduation.jpg");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   overflow: hidden;
+   align-items: center;
+   justify-content: center;
+   padding-left: 5%;
+   padding-right: 5%;
+   padding-top: 10%;
+}
+#certificates .first .content{
+    height: 70%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    margin-top: -3%;
+}
+#certificates .first .content p{
+    font-size: 1.1rem;
+    max-width: 100%;
+    max-height: 100%;
+}
+#certificates .second{
+    height: 30%;
+    width: 100%;
+    background-color: blueviolet;
+    padding-bottom: 1%;
+}
+#certificates .second p{
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding-top: 1%;
+}
+#certificates .second .documents{
+    display: flex;
+    flex-direction: row;
+    gap: 8%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 1rem;
+    overflow: hidden;
+}
+#certificates .second .documents .document-type{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#certificates .second .documents .document-type .document-type-heading{
+    text-transform: uppercase;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 15px;
+}
+/********************END OF CERTIFICATES********************/
+
+/********************INVOLVEMENT********************/
+#involved{
+        height: 200rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+}
+#involved .first{
+   height: 15%;
+   width: 100%;
+   background-image: url("images/university students.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    padding-bottom: 2rem;
+    padding-top: 10%;
+    
+}
+#involved .first .right-hand{
+    height: 70%;
+    width: 50%;
+    margin-left: 51%;
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+    padding:3%;
+    margin-top: -5%;
+    overflow: hidden;
+}
+#involved .first .right-hand .heading{
+   color: gray;
+   font-size: 20px;
+   text-transform: uppercase;
+   width: 50%;
+   margin-bottom: 1rem;
+}
+#involved .first .right-hand p{
+    max-width: 80%;
+    max-height: 70%;
+    text-align: left;
+    overflow-y: hidden;
+}
+#involved .second{
+    height: 3.3%;
+    width: 100%;
+    background-color: blueviolet;
+    padding-top: .5%;
+    padding-bottom: .5%;
+}
+#involved .second .container{
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+    gap:10%;
+    justify-content: center;
+}
+#involved .second .container .img-holder{
+    height: 3rem;
+    width: 3rem;
+    border: 1px solid white;
+    padding-top: 10px;
+    border-radius: 1rem;
+    padding-left: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#involved .second .container .img-holder:hover{
+    background-color: rgba(255, 255, 255, 0.61);
+    transition-delay: .1s ease;
+}
+#involved .second .container .img-holder img{
+    height: 70%;
+    width: 70%;
+}
+/***************CONTACT PAGE***************/
+#involved #contact{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 15%;
+    background-image: url("images/piled books.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border-bottom: 2px solid blueviolet;
+    padding-bottom: 2rem;
+}
+#involved #contact .heading{
+    text-transform: uppercase;
+    color: blueviolet;
+    font-size: 1.4rem;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    font-weight: 700;
+    text-align: center;
+    margin-top: .5%;
+}
+#contact .holder{
+    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 5%;
+} 
+#contact .holder form{
+    width: 40%;
+    background-color: white;
+    box-shadow:  2px 4px 8px 2px rgba(0,0,0,0.2);
+    justify-content: center;
+    align-self: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 6rem;
+    padding-top: 3rem;
+   
+}
+#contact .holder form input{
+    width: 80%;
+    height: 10%;
+    background-color: transparent;
+    border-bottom: 2px solid blueviolet;
+    outline: none;
+    border-top: 1px solid transparent;
+    border-left:1px solid transparent;
+    border-right: 1px solid transparent;
+    margin-left: 7%;
+}
+#contact .holder form textarea{
+    margin-left: 7%;
+    width: 80%;
+    padding:5px 0;
+    font-size: 16px;
+    border: none;
+    border-bottom:2px solid blueviolet;
+    outline: none;
+    resize: none;
+    overflow: hidden;
+}
+#contact .holder form input[type="submit"] {
+    color: white;
+    background-color: blueviolet;
+    border-radius: 2rem;
+   padding-top: .5rem;
+   padding-bottom: 1rem;
+   padding-left: 1.3rem;
+    width: 8rem;
+    margin-bottom: 1rem;
+    margin-top: .5rem;
+ }
+ #contact .holder .contacts{
+    height: 20rem;
+    width: 20rem;
+    background-color:blue;
+    box-shadow:  2px 4px 8px 2px rgba(0,0,0,0.2);
+ }
+/*-----------------END OF COCNTACT PAGE---------------*/
+
+ /*-------------REGISTRATION PAGE----------------------*/
+ #register{
+    height: 30rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url("images/bg13.jpg");
+    opacity: .7;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    padding-bottom: 10rem;
+ }
+ #register .heading{
+    color: blueviolet;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 2%;
+    text-shadow: 1px 2px 6px rgba(0, 0, 0,0)
+    1px 2px 6px rgba(0, 0, 0,0);
+    text-decoration: underline;
+ }
+ #register .register-1{
+    height: 80%;
+    width: 50%;
+    margin-left:45%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+ }
+ #register .register-1 p{
+    color: white;
+    text-shadow: 10px 5px 10px #000;
+    background-color: linear-gradient(0,23,5,#000);
+    margin-top: 10%;
+    overflow: hidden;
+ }
+ #register .register-1 button{
+    background-color: blueviolet;
+    width: 12rem;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+    padding: 15px 10px;
+    border-radius: 2rem;
+    margin-bottom: none;
+    overflow: hidden;
+ }
+ .register-2 {
+   height: 30rem;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap:wrap;
+   gap: 2%;
+   border-bottom: 1px solid blueviolet;
+ }
+ .register-2 {
+    padding:5%;
+    padding-right: 5%;
+ }
+ .register-2 img{
+    height: 90%;
+    width: 40%;
+    margin-left: -2%;
+ }
+ .register-2 .register-box{
+    background-color: white;
+    box-shadow:2px 4px 8px 2px rgba(0,0,0,0.2);
+    width: 30%;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+ }
+ .register-2 .register-box .heading{
+    font-size: 1.3rem;
+    color:blueviolet;
+    text-decoration: underline;
+    text-align: center;
+ }
+ .register-2 .register-box form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+ }
+ .register-2 .register-box form span{
+    color: black;
+    font-size: 1.1rem;
+ }
+ .register-2 .register-box form .input{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-bottom: 2px solid blueviolet;
+    margin-bottom: -.5rem;
+    width: 100%;
+ }
+ .register-2 .register-box form .input input{
+    border: none;
+    outline: none;
+    color: gray;
+    font-size: 1rem;
+ }
+ .register-2 .register-box form .check-box{
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+ }
+ .register-2 .register-box form .check-box span{
+    font-size: 1.3rem;
+ }
+ .register-2 .register-box form .check-box input[type="checkbox"]{
+    margin-left: -1.4rem;
+    color: blueviolet;
+ } 
+ .register-2 .register-box form input[type="submit"] {
+    width: 10rem;
+    padding: 7px 15px;
+    border-radius: 2rem;
+    color: white;
+    font-size: 1.2rem;
+    background-color: blueviolet;
+ }
+ /*------------------END OF REGISTRATION PAGE----------------*/
+
+ /*------------------PARTICIPATION PAGE---------------------*/
+#participation-page{
+   height: 30%;
+   width: 100%;
+   background-image: url("images/woman.jpg");
+   object-fit: cover;
+   background-position: center;
+   background-size: cover;
+   overflow: hidden;
+   background-repeat: no-repeat;
+   display: flex;
+}
+#participation-page .left{
+    height: 100%;
+    width: 50%;
+    margin-left: 50%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+#participation-page .left p{
+    max-width: 80%;
+    max-height: 100%;
+}
+#participation-page .left button{
+    width: 10rem;
+    padding:15px 30px;
+    background-color: blueviolet;
+    color: white;
+    margin-left: -2rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+}
+
+#participation-page .left .join-us{
+    gap: 3%;
+    height: auto;
+    width: 65%;
+    background-color: white;
+    border-radius: 2rem;
+    padding: 2rem 2rem;
+    box-shadow:2px 4px 8px 2px rgba(0,0,0,0.2);
+}
+#participation-page .left .join-us p{
+    color: gray;
+    font-size: auto;
+    margin-bottom: 20px;
+}
+#participation-page .left .join-us .holder{
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-self: center;
+    align-items: center;
+    border-bottom: 1px solid blueviolet;
+}
+#participation-page .left .join-us .holder img{
+    height: 2rem;
+}
+#participation-page .left .join-us .holder span a {
+    font-size: 15px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #000;
+  cursor: pointer;
+}
+#participation-page .right{
+    margin-left: -94%;
+    width:40%;
+    padding-top: -7rem;
+    height: 20% ;
+    margin-top: 10%;
+    display: flex;
+    margin-right: -20%;
+}
+#participation-page .right p{
+    color: blueviolet;
+   text-transform: uppercase;
+   font-size: 1.5rem;
+   font-weight: 900;
+   overflow: hidden;;
+ }
+ /*-------------END OF PARTICIPATION PAGE------------*/
+
+
+/*--------------FOOTER-------------------------------*/
+#footer{
+    height: 30rem;
+    width: 100%;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 2rem;
+    gap: 5%;
+    padding: .5rem .5rem;
+    display: flex;
+}
+#footer .menu-holder{
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    width: 100%;
+
+}
+#footer .holder{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 50%;
+    height: 60%;
+    text-align: center;
+}
+#footer .holder .page-type{
+    color: white;
+    font-size: 20px;
+    overflow: hidden;
+    height: 30rem;
+}
+#footer .holder .page-type .heading{
+   justify-self: center;
+   text-align: center;
+   margin-bottom: 1rem;
+   text-transform: uppercase;
+}
+#footer .holder ul li{
+    margin: .5rem;
+}
+#footer .holder ul li a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+#footer .holder ul li a:hover{
+    color: purple;
+}
+#footer .links{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 4%;
+    margin-top: -12rem;
+}
+#footer .links .link:hover{
+    transition: .7s ease-in-out;
+    transform: scale(2);
+}
+#footer .search-bar{
+    display: flex;
+    gap: 1rem;
+    background-color: white;
+    height: 2rem;
+    border: 1px solid black;
+    width:20rem;
+    height:auto;
+    margin-left: 2rem;
+    padding: 10px 10px;
+ }
+ #footer .search-holder{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+    width: 100%;
+ }
+ #footer .search-bar .search{
+    height: 1rem;
+    cursor: pointer;
+ }
+ #footer  .search-bar input{
+     background-color: transparent;
+     outline: none;
+     border:none;
+     color:var(--color-black);
+     width: 90%;
+ }
+ #footer .search-holder button{
+    width: 5rem;
+    color: white;
+    background-color: purple;
+    outline: none;
+    cursor: pointer;
+ }
+ #footer .search-holder button:hover{
+    opacity: .7;
+ }
+ /*-------Responsive web design-------*/
+ @media(max-width:1100px){
+  header{
+     gap: 10%;
+  }
+  header .right{
+    display:block;
+   }
+ }
+ @media screen and (max-width:873px) {
+    header{
+      background-color: transparent;
+    }
+    header .right{
+        display:none;
+       }
+   }
+   
+   @media(max-width:625px){
+    #home{
+        height: 45rem;
+    }
+    header{
+        margin-bottom: 2rem;
+    }
+    #home .home-content{
+        padding-left: 3%;
+    }
+    #home .home-content .wrapper .links{
+        display: flex;
+        gap: 1rem;
+        cursor: pointer;
+    }
+   }
+   @media(max-width:648px){
+    #about .first{
+        padding-left: 5%;
+    }
+
+   }
+   @media(max-width:576px){
+    #about .first .first-content p{
+        max-width: 80%;
+   }
+
+@media(max-width:553px){
+    #about .second{
+       height: 25rem;
+    }
+    #about .second .programs .program-heading{
+        font-size: .8rem;
+    }
+    #about .first .first-content p{
+        max-width: 80%;
+    }
+    #home .home-content .container {
+        margin-left:-4rem;
+    }
+}
+
+@media screen and (max-width:900px){
+    #academics .main .left-side button{
+        width: 10rem;
+        font-size: 15px;  
+    }
+    #academics .main .right-side{
+    display: none;
+    }
+    #academics .main .left-side{
+    width: 90%;
+    }
+    #academics .main .left-side p{
+    max-width: 80%;
+    } 
+    #experience .last .future-partners{
+    gap: 20%;
+    }
+#campus .holder{
+    width: 100%;
+}
+#campus p{
+    width: 100%;
+   font-size: 20px;
+}
+#classroom .heading{
+   padding-bottom: 3rem;
+}
+#certificates .second{
+    height: 40%;
+    overflow: hidden;
+}
+ 
+}
